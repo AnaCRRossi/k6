@@ -44,13 +44,23 @@ Nome da Pasta/Arquivo: //collections/Api_transferência.postman_collection.json
 | token              | qual o token gerado ao logar na aplicação             | texto    | nao         |
 
 🚀 Estrutura e Distribuição do Código
-Pasta: src/test/java/Apis => estão disponibilizados os casos de testes onde serão execução e chamaram os scripts de testes automatizados
+Pasta: Scritps/ => será disponibilizado o script de teste automatizado
 
-Readme - onde estão descritos detalhes sobre o desenvolvimento dos scritps de testes automatizados
+Readme - onde estão descritos detalhes sobre o desenvolvimento da automação de testes deste projeto
 
 Documentação: onde estão descritas as orientações base para levantamento/desenvolvimento dos testes
 
 🚀 Relatórios
+
+<img width="1887" height="1001" alt="image" src="https://github.com/user-attachments/assets/86fb5ecb-f229-443f-b1cb-3b19578e72f2" />
+
+<img width="1867" height="932" alt="image" src="https://github.com/user-attachments/assets/4ccfba2a-3d81-45ae-8fa5-ffcd8d1457c5" />
+
+<img width="1852" height="922" alt="image" src="https://github.com/user-attachments/assets/47007ae3-8e71-4adb-bee6-85f00e2b657c" />
+
+<img width="1837" height="894" alt="image" src="https://github.com/user-attachments/assets/b381b7fd-18a9-4ad4-bb64-91d20b176311" />
+
+<img width="1824" height="895" alt="image" src="https://github.com/user-attachments/assets/bfed50bd-db63-4aba-b800-ee7ce6c9827c" />
 
 
 🔖 Executando os testes utilizando no terminal a linha de comando: mvn test
