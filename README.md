@@ -2,7 +2,7 @@
 
 Escopo:
 
-=> Elaborar testes automatizados considerando uma collection "PGATS02-API" que permite aos usuários poderem cadastrar novos usuarios e realizar transferências de valores entre as contas criadas.
+=> Elaborar testes automatizados considerando a collection "PGATS02-API" do Julio de Lima, que permite aos usuários poderem cadastrar novos usuarios e realizar transferências de valores entre as contas criadas.
 
 🚀 Ferramentas:
 
@@ -11,13 +11,13 @@ Escopo:
 
 🚀 Collections:
 
-Nome da Pasta/Arquivo: //collections/Api_trasnferência.postman_collection.json
+Nome da Pasta/Arquivo: //collections/Api_transferência.postman_collection.json
 
 => O token e gerado quando e realizado o login de um usuario
 
-🚀 Requisitos: Cadastro de contas e Consulta de transferências 
+🚀 Requisitos: Cadastro de ususarios e Consulta de transferências 
 
-=> Para que todas as requisições de tasnferências sejam acessadas é necessário dispor de um token
+=> Para que todas as requisições de transferências sejam acessadas é necessário dispor de um token
 
 ## 🔖 Requisições:
 
@@ -29,66 +29,26 @@ Nome da Pasta/Arquivo: //collections/Api_trasnferência.postman_collection.json
 
  - [X] Deve retornar 201 ao Realizar uma transferência
  
- - [X] Deve retornar 201 ao listar todas as transferências realizadas
+ - [X] Deve retornar 201 ao Listar todas as transferências realizadas
  
 🚀 Mapeamento dos campos das Apis
 
 | campos             | descrição                                      | tipo     | obrigatório |
 | :----------------- | :-------------------------------------------   | :------- | :---------- |
-| id                 | id gerado ao cadastrar um vote                 | numero   | sim         |
-| image_id           | id da imagem ao cadastrar um vote              | texto    | sim         |
-| sub_id             | sub_id ao cadastar um vote                     | texto    | nao         |
-| created_at         | data da criação de um vote                     | data     | nao         |
-| value              | valor de um vote                               | numero   | nao         |
-| country_code       | codigo do pais de um vote                      | texto    | nao         |
-| image.id           | id da imagem anexada ao vote criado            | texto    | nao         |
-| image.url          | url:caminho da imagem anexada ao cote criado   | texto    | nao         |
+| username           | id gerado ao cadastrar um vote                 | numero   | sim         |
+| password           | id da imagem ao cadastrar um vote              | texto    | sim         |
+| favorecidos        | sub_id ao cadastar um vote                     | texto    | nao         |
+| from               | data da criação de um vote                     | data     | nao         |
+| to                 | valor de um vote                               | numero   | nao         |
+| value              | codigo do pais de um vote                      | texto    | nao         |
+| token              | id da imagem anexada ao vote criado            | texto    | nao         |
 
 🚀 Estrutura e Distribuição do Código
 Pasta: src/test/java/Apis => estão disponibilizados os casos de testes onde serão execução e chamaram os scripts de testes automatizados
 
-01 - CT01_Pesquisar_Vote
-
-02 - CT02 - Incluir_Vote
-
-03 - CT03 - Excluir_Vote
-
 Readme - onde estão descritos detalhes sobre o desenvolvimento dos scritps de testes automatizados
 
 Documentação: onde estão descritas as orientações base para levantamento/desenvolvimento dos testes
-
-🚀 Casos de Testes/Evidências: Consultar/Cadastrar/Deletar um Vote
-
-| Casos de Testes                                                   | Descrição (Cobertura dos testes)                                                 | Veja mais detalhes/Status|
-| :------------------------------------------------------------     | :---------------------------------------------------------------------------     | :--------                |
-| 01 - Pesquisar/Listar os Votes Cadastrados                        | Validar os cenarios considerando a Ação de Pesquisar/Listar votes Cadastrados    | [link](https://gitlab.com/antoniogmartins1/sensedia_desafio_001/blob/main/Pesquisar_Vote.md)                                                                                   |      
-| 02 - Cadastrar um Vote                                            | Validar os cenarios considerando a Ação de Cadastrar um vote                     | [link](https://gitlab.com/antoniogmartins1/sensedia_desafio_001/blob/main/Incluir_vote.md)                                                                                     |     
-| 03 - Deletar um Vote                                              | Validar os cenarios considerando a Ação de Deletar um vote                       | [link](https://gitlab.com/antoniogmartins1/sensedia_desafio_001/blob/main/Excluir_Vote.md)                                                                                     |
- 
-
-01 - Pesquisar/Listar os Votes Cadastrados
-Validar os cenarios considerando a Ação de Pesquisar/Listar votes Cadastrados
-link
-
-02 - Cadastrar um Vote
-Validar os cenarios considerando a Ação de Cadastrar um vote
-link
-
-03 - Deletar um Vote
-Validar os cenarios considerando a Ação de Deletar um vote
-link
-
-🔖 Melhorias
-=> Seria interessante que a cada requisição, sobre a ação de criar um vote, o registro criado fosse mantido. Neste momento, caso um vote novo seja criado, o anterior deixa de existir.
-
-=> No collection >> Ação/Verbo: Deletar: O caminho da api deveria ser: "votes", mantendo-se no plural
-
-=> A ação de alterar um vote não esta implementada de acordo com a documentação
-
-=> Após realizar uma busca por um subvote inexistente, seria interessante retornar o statuscode = "404 not found" e ao mesmo tempo exibir algum tipo de mensagem
-
-=> Ao tentar realizar um request, sem utilizar a userkey, a mensagem deveria ser padrão, tanto para incluir um vote, deletar um vote ou consultar um vote. Hoje esta mensagem varia entre:
-"AUTHENTICATION_ERROR - you need to send your API Key as the 'x-api-key' header" assim como "AUTHENTICATION_ERROR"
 
 🚀 Relatórios
 
