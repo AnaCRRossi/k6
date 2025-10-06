@@ -13,7 +13,7 @@ Escopo:
 
 Nome da Pasta/Arquivo: //collections/Api_transferência.postman_collection.json
 
-[Api_transferência.postman_collection.json.json…]()
+[Api_transferência.postman_collection.json]()
 
 
 => O token é gerado quando e realizada a requisição de login do usuario
