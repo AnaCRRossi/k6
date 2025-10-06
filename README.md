@@ -1,4 +1,4 @@
-# k6 (em construção)
+# TESTES DE PERFORMANCE utilizando o K6
 
 Escopo:
 
