@@ -52,7 +52,7 @@ Documentação: onde estão descritas as orientações base para levantamento/de
 
 🚀 Relatórios
 
-<img width="1887" height="1001" alt="image" src="https://github.com/user-attachments/assets/86fb5ecb-f229-443f-b1cb-3b19578e72f2" />
+<img width="1910" height="1040" alt="image" src="https://github.com/user-attachments/assets/1831170d-5a2c-49eb-a828-8a40f85c5585" />
 
 <img width="1867" height="932" alt="image" src="https://github.com/user-attachments/assets/4ccfba2a-3d81-45ae-8fa5-ffcd8d1457c5" />
 
@@ -63,27 +63,21 @@ Documentação: onde estão descritas as orientações base para levantamento/de
 <img width="1824" height="895" alt="image" src="https://github.com/user-attachments/assets/bfed50bd-db63-4aba-b800-ee7ce6c9827c" />
 
 
-🔖 Executando os testes utilizando no terminal a linha de comando: mvn test
-(02) Duas Formas de executar os testes:
+🔖 Executando os testes utilizando no terminal
 
-=> 01 Forma: Após fazer o download do projeto, basta abrir o Eclipse, importar o projeto e mandar atualizar as dependencias e em seguida, em cima do arquivo "testng.xml", ao clicar com o botão direito do mouse, selecionar a opção Manven>>Maven test e mandar executar os testes.
+=> Após fazer o download do projeto, dentro da pasta do projeto, basta abrir o terminal do sistema operaciona e executar as seguintes linhas de comando:
 
-=> 02 Forma: Após fazer o download do projeto, basta abrir a pasta raiz do projeto <nome_projeto> em seguida acessar a pasta < automacao > que é onde se encontra o arquivo POM.xml, abrir o terminal(cmd) e digitar a seguinte linha de comando: mvn test
+k6 run --out web-dashboard=export=relatorio.html Desafio03b.js
 
-Obs.: detalhe:é preciso antes dispor do mvn instalado no computador
-
-🔖 Executando os testes
-Após a Execução dos testes é gerado um relatorio em formato html:
-pasta: automação/target/surefire-reports/index.html
+Obs.: detalhe:é preciso antes dispor do k6 instalado no computador
 
 
 🚀 Análise dos testes(Smoke Tests) realizados
 Os testes foram executados com exito.
 StatusCode retornados dentro do esperado, de acordo com a documenação/metodo de cada request
 
-
 🚀 Fontes - Documentação da Api:
-
+Julio de Lima
 
 📝 License
 This project is licensed under the MIT License - see the LICENSE file for details.
