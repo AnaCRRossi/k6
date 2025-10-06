@@ -70,11 +70,21 @@ Documentação: onde estão descritas as orientações base para levantamento/de
 
 k6 run --out web-dashboard=export=relatorio.html Desafio03b.js
 
-Obs.: detalhe:é preciso antes dispor do k6 e o node estejam instalados no computador
-      é preciso que seja startado o serviço do localhost com as apis ativas: Dentro da pasta onde se encontram as apis, digitar node server.js
+Obs1: É preciso antes dispor do k6 e o node estejam instalados no computador
 
-🚀 Análise dos testes(Smoke Tests) realizados
+Obs2: É preciso que seja startado o serviço do localhost com as apis ativas: Dentro da pasta onde se encontram as apis, digitar node server.js
+
+🚀 Análise dos testes de performance realizados
+
 Os testes foram executados com exito.
+
+Os thresholds: 
+    http_req_failed: ['rate < 0.20'], // o http erros deve ser menor que 0.20%
+    
+    http_req_duration: ['p(95) < 100'], // 95% do tempo de resposta está abaixo de 100 ms
+	
+    checks: ['rate>0.95'], // pelo menos 95% dos checks devem passar
+
 StatusCode retornados dentro do esperado, de acordo com a documenação/metodo de cada request
 
 🚀 Fontes - Documentação da Api:
