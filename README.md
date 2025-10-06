@@ -33,15 +33,15 @@ Nome da Pasta/Arquivo: //collections/Api_transferência.postman_collection.json
  
 🚀 Mapeamento dos campos das Apis
 
-| campos             | descrição                                      | tipo     | obrigatório |
-| :----------------- | :-------------------------------------------   | :------- | :---------- |
-| username           | id gerado ao cadastrar um vote                 | numero   | sim         |
-| password           | id da imagem ao cadastrar um vote              | texto    | sim         |
-| favorecidos        | sub_id ao cadastar um vote                     | texto    | nao         |
-| from               | data da criação de um vote                     | data     | nao         |
-| to                 | valor de um vote                               | numero   | nao         |
-| value              | codigo do pais de um vote                      | texto    | nao         |
-| token              | id da imagem anexada ao vote criado            | texto    | nao         |
+| campos             | descrição                                             | tipo     | obrigatório |
+| :----------------- | :---------------------------------------------------- | :------- | :---------- |
+| username           | Nome do usuário a ser cadastrado                      | texto    | sim         |
+| password           | Senha de um usuario a ser cadastrado                  | texto    | sim         |
+| favorecidos        | Favorecido ao cadastrar um usuario                    | texto    | nao         |
+| from               | qual o nome do remetente da conta para transferência  | texto    | sim         |
+| to                 | qual o nome do favorecido para transferência          | texto    | sim         |
+| value              | qual valor da conta a ser transferida                 | numero   | sim         |
+| token              | qual o token gerado ao logar na aplicação             | texto    | nao         |
 
 🚀 Estrutura e Distribuição do Código
 Pasta: src/test/java/Apis => estão disponibilizados os casos de testes onde serão execução e chamaram os scripts de testes automatizados
