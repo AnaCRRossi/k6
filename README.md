@@ -63,14 +63,15 @@ Documentação: onde estão descritas as orientações base para levantamento/de
 <img width="1824" height="895" alt="image" src="https://github.com/user-attachments/assets/bfed50bd-db63-4aba-b800-ee7ce6c9827c" />
 
 
+
 🔖 Executando os testes utilizando no terminal
 
 => Após fazer o download do projeto, dentro da pasta do projeto, basta abrir o terminal do sistema operaciona e executar as seguintes linhas de comando:
 
 k6 run --out web-dashboard=export=relatorio.html Desafio03b.js
 
-Obs.: detalhe:é preciso antes dispor do k6 instalado no computador
-
+Obs.: detalhe:é preciso antes dispor do k6 e o node estejam instalados no computador
+      é preciso que seja startado o serviço do localhost com as apis ativas: Dentro da pasta onde se encontram as apis, digitar node server.js
 
 🚀 Análise dos testes(Smoke Tests) realizados
 Os testes foram executados com exito.
