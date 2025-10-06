@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "1704d9a5-fea4-4d79-824b-7dce54e4c45f",
+		"name": "JL- Desafio 03",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46401284",
+		"_collection_link": "https://antoniomartinspetz.postman.co/workspace/antonio-martins-petz's-Workspac~f307cb7b-3c60-4e34-839e-f4c054d72ec1/collection/46401284-1704d9a5-fea4-4d79-824b-7dce54e4c45f?action=share&source=collection_link&creator=46401284"
+	},
+	"item": [
+		{
+			"name": "Registrar Novo Usuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"josefina2@empresa.com.br\",\r\n  \"password\": \"123456\",\r\n  \"favorecidos\": [\r\n    \"manoel\"\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/users/register",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lista de Usuarios",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/users",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
